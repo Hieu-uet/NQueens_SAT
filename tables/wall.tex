@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\caption{Hai phạm vi đo khác nhau tại $N=128$, trung vị năm lượt (ms).}\label{tab:wall}
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+Phương pháp & $t_{\mathrm{total}}$ & \code{process_wall_s} \\
+\midrule
+SAT pairwise & 4\,106.107 & 5\,072.776 \\
+SAT bitwise & 1\,073.782 & 1\,375.466 \\
+CP-SAT & 3\,094.220 & 4\,078.751 \\
+CP Optimizer & 49.009 & 912.675 \\
+\bottomrule
+\end{tabular}
+\tabnote{Cột cuối bao gồm khởi động tiến trình, import, thống kê, giao tiếp và thu hồi; đã đổi từ giây sang ms.}
+\end{table}

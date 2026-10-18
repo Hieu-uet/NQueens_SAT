@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\caption{Trung vị tổng thời gian của năm lượt, đơn vị ms.}\label{tab:total}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Phương pháp & $N=8$ & $N=16$ & $N=24$ & $N=31$ & $N=32$ & $N=64$ & $N=128$ \\
+\midrule
+SAT pairwise & 1.481 & 26.863 & 95.427 & 52.273 & 50.364 & 471.064 & 4\,106.107 \\
+SAT seqcounter & 1.481 & 10.883 & 50.705 & 38.264 & 329.684 & 27\,011.346 & \TO \\
+SAT bitwise & 1.524 & 152.725 & 4\,732.902 & 1\,093.618 & 20\,019.200 & \TO & 1\,073.782 \\
+CP-SAT & 11.451 & 34.946 & 65.818 & 100.003 & 131.930 & 524.939 & 3\,094.220 \\
+Gurobi MIP & 3.600 & 12.678 & 9.865 & 41.414 & 45.307 & \GL & \GL \\
+CPLEX MIP & 8.059 & 6.996 & 14.513 & 14.807 & \GL & \GL & \GL \\
+CP Optimizer & 32.261 & 40.281 & 38.821 & 45.363 & 35.391 & 43.402 & 49.009 \\
+\bottomrule
+\end{tabular}
+\tabnote{Dùng dấu chấm cho phần thập phân và khoảng mảnh để nhóm hàng nghìn. \TO: hết hạn giải 5/5 lượt. \GL: bỏ qua 5/5 lượt theo giấy phép, không đo thời gian.}
+\end{table}
